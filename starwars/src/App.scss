@@ -9,15 +9,21 @@ $react-blue : #282c34;
 }
 
 .jedi {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   border: 1px solid white;
-  width: 30%;
-  height: 70vh;
+  width: 350px;
+  min-height: 50vh;
   background: $react-blue;
   color: white;
   margin: 1vh;
+
+  div {
+    margin: 20px;
+  }
+
 }
-
-
 
 img {
   width: 100px;

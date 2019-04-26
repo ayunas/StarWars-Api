@@ -19,9 +19,11 @@ function StarWars(props) {
                         return (
                         <div className='jedi'>
                             <img src={urls[i][0]} />
-                            <p>{jedi.name}</p>
-                            <p>Height: {jedi.height}</p>
-                            <p>Skin-Color: {jedi.skin_color}</p>
+                            <div>
+                                <h4><strong>{jedi.name}</strong></h4>
+                                <p>Height: {jedi.height}</p>
+                                <p>Skin-Color: {jedi.skin_color}</p>
+                            </div>
                             {/* <p>Vehicle: {jedi.vehicles[0]}</p> */}
                         </div>
                         )
