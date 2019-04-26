@@ -7,7 +7,6 @@ import {fetchStarWars} from './actions';
 
 class App extends React.Component {
 
-
   componentDidMount() {
     this.props.fetchStarWars('https://swapi.co/api/people/');
   }

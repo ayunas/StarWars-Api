@@ -11,6 +11,12 @@ function StarWars(props) {
                     <Loader type="Circles" color="navy"/>
                 </div> 
                 }
+                
+                { props.starwars.map( jedi => {
+                        return <div>{jedi.name}</div>
+                        }
+                    )
+                }
            </>
     )   
 }
