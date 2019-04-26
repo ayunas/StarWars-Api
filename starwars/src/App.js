@@ -6,6 +6,14 @@ import {connect} from 'react-redux';
 import {fetchStarWars} from './actions';
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      avatars : [{luke : 'http://bit.ly/2UBNs2h'}]
+    }
+
+  }
 
   componentDidMount() {
     this.props.fetchStarWars('https://swapi.co/api/people/');
@@ -13,16 +21,18 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        <Header />
-        <StarWars />
-      </div>
+      <>
+        <Header className='header' />
+        <div className="App">
+          <StarWars avatars={this.state.avatars}/>
+        </div>
+      </>
     );
   }
 }
 
 function mapStateToProps(state) {
-  // console.log(state);
+
   return {
     starwars : state.starwars
   }

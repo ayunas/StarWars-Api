@@ -1,5 +1,27 @@
+$react-blue : #282c34;
+
 .App {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.jedi {
+  border: 1px solid white;
+  width: 30%;
+  background: $react-blue;
+  color: white;
+  margin: 1vh;
+}
+
+img {
+  width: 100px;
+}
+
+header {
+  margin-bottom: 20px;
 }
 
 .App-logo {
@@ -23,6 +45,8 @@
   }
 
 }
+
+
 
 .App-link {
   color: #61dafb;
