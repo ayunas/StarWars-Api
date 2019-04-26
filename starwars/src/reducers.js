@@ -1,6 +1,6 @@
 
 
-function rootReducer(state = {starwars : []}, action) {
+function rootReducer(state = {starwars : [], error : false}, action) {
 
     switch (action.type) {
         case "FETCH": 
@@ -10,12 +10,15 @@ function rootReducer(state = {starwars : []}, action) {
             }
         case "SUCCESS":
             return {
-                ...state
+                ...state,
+                starwars : action.payload,
+                fetch : false
             }
         
         case "ERROR":
             return {
-                ...state
+                ...state,
+                error : true,
             }
 
         default: 
