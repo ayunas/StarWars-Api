@@ -7,13 +7,13 @@ export default function Footer() {
     <footer>
        <figure>
             <div>
-                <figcaption>Built with: </figcaption>
+                <p>Built with: </p>
                 <img src={redux} />
             </div>
 
             <div>
-                <figcaption>Project of: </figcaption>
-                <a href='http://www.lambdaschool.com' target="_blank"> <img src={lambdaLogo} /></a>
+                <p>Project of: </p>
+                <a href='http://www.lambdaschool.com' target="_blank"> <img className='lambda' src={lambdaLogo} /></a>
             </div>
        </figure>
         

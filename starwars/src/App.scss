@@ -55,10 +55,23 @@ header {
   }
 
 }
+footer {
 
+
+}
 figure {
   display: flex;
   justify-content: center;
+  text-align: center;
+
+  img {
+    margin-top: 0;
+  }
+
+  .lambda {
+    margin-top: 20px;
+  }
+
 }
 
 .App-link {
