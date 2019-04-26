@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 
-function fetchStarWars(url) {
+export function fetchStarWars(url) {
+    console.log('fetchStarWars triggered. may the force be with you');
     
     return (dispatch) => {
 
