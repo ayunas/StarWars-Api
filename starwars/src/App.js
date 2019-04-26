@@ -1,16 +1,31 @@
 import React from 'react';
 import './App.scss';
-import Loader from 'react-loader-spinner';
+import Header from './Header';
+import StarWars from './StarWars';
+import {connect} from 'react-redux';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-          <Loader type="Grid" color="white" />  
-          <h2>Star Wars SWAPI </h2>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+
+  componentDidMount() {
+    // this.props.fetchStarWars();
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Header />
+        <StarWars />
+      </div>
+    );
+  }
 }
 
-export default App;
+function mapStateToProps(state) {
+  console.log(state);
+  return {
+    starwars : state.starwars
+  }
+
+}
+
+export default connect(mapStateToProps,{})(App);
