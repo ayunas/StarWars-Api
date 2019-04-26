@@ -23,6 +23,13 @@ $react-blue : #282c34;
     margin: 20px;
   }
 
+  img {
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
 }
 
 img {
