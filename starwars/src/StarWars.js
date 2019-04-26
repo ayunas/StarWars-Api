@@ -3,7 +3,9 @@ import {connect} from 'react-redux';
 import Loader from 'react-loader-spinner';
 
 function StarWars(props) {
-    console.log(props.avatars);
+    console.log('avatars props: ' , props.avatars);
+    const urls = props.avatars.map( jedi => Object.values(jedi) );
+
     return (
            <>
                 { props.fetch && 
@@ -13,10 +15,10 @@ function StarWars(props) {
                 </div> 
                 }
                 
-                { props.starwars.map( jedi => {
+                { props.starwars.map( (jedi,i) => {
                         return (
                         <div className='jedi'>
-                            <img src={props.avatars[0].luke} />
+                            <img src={urls[i][0]} />
                             <p>{jedi.name}</p>
                             <p>Height: {jedi.height}</p>
                             <p>Skin-Color: {jedi.skin_color}</p>

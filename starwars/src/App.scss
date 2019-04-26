@@ -11,17 +11,27 @@ $react-blue : #282c34;
 .jedi {
   border: 1px solid white;
   width: 30%;
+  height: 70vh;
   background: $react-blue;
   color: white;
   margin: 1vh;
 }
 
+
+
 img {
   width: 100px;
+  margin-top: 20px;
+  margin: 20px auto;
 }
 
 header {
   margin-bottom: 20px;
+
+  .starwars {
+    margin: 0px;
+    width: 200px;
+  }
 }
 
 .App-logo {
@@ -46,7 +56,10 @@ header {
 
 }
 
-
+figure {
+  display: flex;
+  justify-content: center;
+}
 
 .App-link {
   color: #61dafb;
