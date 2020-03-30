@@ -3,7 +3,6 @@ import React from 'react'
 import './App.scss';
 import StarWarsLogo from './images/star-wars-logo.png';
 
-
 function Header() {
   return (
     <header className="App-header">
