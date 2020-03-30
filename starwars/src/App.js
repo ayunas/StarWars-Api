@@ -5,7 +5,9 @@ import Footer from './Footer';
 import StarWars from './StarWars';
 import {connect} from 'react-redux';
 import {fetchStarWars} from './actions';
-
+import vader from './images/vader.jpg';
+import r5d4 from './images/R5D4.png';
+import obiwan from './images/obiwan.png';
 
 class App extends React.Component {
   constructor(props) {
@@ -16,13 +18,13 @@ class App extends React.Component {
         {luke : 'http://bit.ly/2UBNs2h'},
         {c3po : 'http://bit.ly/2DARP81'},
         {r2d2 : 'http://bit.ly/2PwSk7H'},
-        {vader: 'http://bit.ly/2ZCX68C'},
+        {vader},
         {leia : 'http://bit.ly/2DzE21g'},
         {owen : 'http://bit.ly/2GFq8LN'},
         {beru : 'http://bit.ly/2PwSV9r'},
-        {r5d4 : 'http://bit.ly/2XL3Yia'},
+        {r5d4},
         {biggs: 'http://bit.ly/2PysXCK'},
-        { obi : 'http://bit.ly/2vlO1Tw'}
+        {obiwan}
     ]
     }
 
